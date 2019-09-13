@@ -215,7 +215,7 @@ for node in G:
         if node[i] == '0':
             emptyCount += 1
 
-    sizeMap.append(((emptyCount + 1) * 1) ** 4)
+    sizeMap.append(((emptyCount + 1) * 15) ** 2)
     
     if emptyCount >= 9:
         colorMap.append('red')
@@ -291,5 +291,6 @@ for e in G.edges:
         print ("Well, that's weird?")
         edgeMap.append('white')
 
-nx.draw(G, width=0.5, edge_color=edgeMap, node_color=colorMap, alpha=0.8, node_size=sizeMap)
+plt.figure(figsize=(24, 18))
+nx.draw(G, width=2, edge_color=edgeMap, node_color=colorMap, alpha=0.8, node_size=sizeMap)
 plt.show()
