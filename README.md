@@ -1,5 +1,5 @@
 # TicTacToeMap
-## An abstract and visual representation of all tic tac toe board states
+## *An abstract, visual representation of all tic tac toe board states*
 
 ### The Problem
 Over the weekend I was at a lake without internet and wondered how many different board states there were in Tic-Tac-Toe, so I wrote a program to simulate every board state.
@@ -18,4 +18,6 @@ For example to illustrate, on the first turn the first player can palce an X in 
 ![alt text](https://github.com/JonKleehammer/TicTacToeMap/blob/master/ExampleGraph)
 
 ### Image explanation
-I used networkx (python graphing library) to create a graphical representation of every board state. Each node represents a unique board state and the edges between them represent an X or O being placed traversing through the graph to a new board state. The colors and size represent which turn of the game it is, starting with warm colors the root board state is a large red node which represents an empty board, 3 nodes are connected which represents an X being placed in a corner, the side, and the center, this continues on until all board states are represented (moving to cooler colors as turns are taken and decreasing in size)
+I used networkx (python graphing library) to create a graphical representation of every board state then matplotlib to create the image. I focused more on making it an artistic representation rather than a structured, but more clear, image. Parameters can be altered so the circles are smaller and edges more visible, but that wasn't my intention with this.
+
+Each node represents a unique board state and the edges between them represent an X or O being placed traversing through the graph to a new board state. The colors and size represent which turn of the game it is, starting with warm colors the root board state is a large red node which represents an empty board, 3 nodes are connected which represents an X being placed in a corner, the side, and the center, this continues on until all board states are represented (moving to from large nodes with warm colors to smaller nodes with cooler colors as turns are taken)
