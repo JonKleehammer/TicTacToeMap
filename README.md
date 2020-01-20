@@ -12,7 +12,7 @@ We could think of the last board state as having 5 X's and 4 O's, then do the ma
 ### Simplifying the tree
 Doing every single board state would be extremely messy, but in fact many board states are equivalent. For instance...
 On the first turn of the game the player placing X's could place an X in the top left, but that's no different than placing an X in the bottom left, bottom right, or top left because the board is symmetric and the responses the other player can do are always relative to the other pieces. (There is no top or bottom, left or right. Everything is relative to the other shapes.
-For example to illustrate, on the first turn the first player can palce an X in a corner, side, or center. There are only 3 different moves on the first turn of the game once we take into account board rotations and symmetry.
+For example to illustrate, on the first turn the first player can place an X in a corner, side, or center. There are only 3 different moves on the first turn of the game once we take into account board rotations and symmetry.
 
 ## Example Image
 ![alt text](https://github.com/JonKleehammer/TicTacToeMap/blob/master/ExampleGraph)
